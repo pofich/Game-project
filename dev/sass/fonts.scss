@@ -1,7 +1,32 @@
 @font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('./assets/fonts/Gilroy-Regular.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'BebasNeue';
+    src: url('./assets/fonts/BebasNeue-Bold.ttf') format('TrueType');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-Bold.ttf') format('TrueType');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-Regular.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sf-ui';
+    src: url('./assets/fonts/Sf-ui-text-regular.ttf') format('TrueType');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }

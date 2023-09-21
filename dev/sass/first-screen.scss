@@ -1,3 +1,340 @@
-h1 {
-    color: blue;
+.first-screen {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #FFB54800, #342C1DCD 90%, #08090A), url(/assets/img/main-screen.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .navbar {
+        background-color: transparent;
+        margin-bottom: 130px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 641px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .dropdown {
+        margin: 0 23px;
+    }
+
+
+    .dropdown-item {
+        padding-left: 10px;
+    }
+
+    .dropdown-menu {
+        border-radius: 3px;
+        min-width: 55px;
+    }
+
+    .dropdown-menu,
+    .dropdown-item:hover {
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+
+    .block-icons {
+        display: flex;
+        padding: 0;
+        padding-left: 17px;
+        border-left: 2px solid $text-color;
+        height: 30px;
+    }
+
+    .icon {
+        margin: 0 7px;
+    }
+
+    .dropdown-item,
+    .nav-link {
+        color: $text-color;
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+
+
+
+
+
+    .first-screen-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-screen-title {
+        font-size: 80px;
+        letter-spacing: 3px;
+    }
+
+    .first-screen-subtitle {
+        font-size: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 28px;
+    }
+
+    .btn-text,
+    .btn-price {
+        color: $text-color-secondary;
+        font-family: OpenSans;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .first-screen-title,
+    .first-screen-subtitle,
+    .btn-text,
+    .btn-price {
+        font-family: OpenSans;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .first-screen-title,
+    .first-screen-subtitle {
+        color: $text-color;
+        font-family: BebasNeue;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .btn-price {
+            border-left: 2px solid rgba(0, 0, 0, 0.75);
+            padding-left: 11px;
+        }
+    }
+
+    .dropdown-item {
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+
+    .scroll-down-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        max-width: 100px;
+        height: 47px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%, 0);
+
+        &:hover {
+            .scroll-down-text {
+                color: $primary-color;
+            }
+
+            .scroll-down-img,
+            .scroll-down-img::after,
+            .scroll-down-img::before {
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .scroll-down-text {
+        color: $text-color;
+        text-align: justify;
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 183.333%;
+        text-transform: uppercase;
+    }
+
+    .scroll-down-img {
+        width: 20px;
+        height: 2.3px;
+        top: 7px;
+        background-color: $text-color;
+        position: relative;
+        border-radius: 1px;
+
+        &::after,
+        &::before {
+            content: "";
+            width: 13px;
+            height: 2px;
+            background-color: $text-color;
+            position: absolute;
+            top: 4px;
+            right: -1px;
+            transform: rotate(140deg);
+            border-radius: 1px;
+        }
+
+        &::before {
+            right: 8px;
+            transform: rotate(40deg);
+        }
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .active {
+//     transform: translate(100vw);
+// }
+
+// .block {
+//     position: relative;
+//     right: 10px;
+// }
+
+// .toggleButton {
+//     position: absolute;
+// }
+
+
+
+
+
+
+
+
+
+
+
+//  .myelement {
+//      height: 200px;
+//      display: flex;
+//      position: relative;
+
+//      .element:nth-child(1) {
+//          background-color: rgb(182, 24, 24);
+//      }
+
+//      .element:nth-child(2) {
+//          background-color: rgb(29, 78, 121);
+//      }
+
+//      .element:nth-child(3) {
+//          background-color: green;
+//      }
+
+//      .element {
+//          position: absolute;
+//          top: 0px;
+//          right: 40px;
+//          width: 100px;
+//          height: 100%;
+//          transition: 3s;
+//      }
+//  }
+
+
+
+//  .class1 {
+//      background-color: yellow;
+
+//      .element:nth-child(1) {
+//          z-index: 2;
+//      }
+
+//      .element:nth-child(2) {
+//          z-index: 1;
+//          right: 20px;
+//          top: 20px;
+//          height: calc(100% - 40px);
+
+//      }
+
+//      .element:nth-child(3) {
+//          z-index: 0;
+//          right: 10px;
+//          top: 40px;
+//          height: calc(100% - 80px);
+//      }
+//  }
+
+//  .class2 {
+//      background-color: aqua;
+
+//      .element:nth-child(2) {
+//          z-index: 2;
+//      }
+
+//      .element:nth-child(3) {
+//          z-index: 1;
+//          right: 20px;
+//          top: 20px;
+//          height: calc(100% - 40px);
+//      }
+
+//      .element:nth-child(1) {
+//          right: 10px;
+//          top: 40px;
+//          height: calc(100% - 80px);
+//      }
+//  }
+
+//  .class3 {
+//      background-color: blueviolet;
+
+//      .element:nth-child(3) {
+//          z-index: 2;
+//      }
+
+//      .element:nth-child(1) {
+//          z-index: 1;
+//          right: 20px;
+//          top: 20px;
+//          height: calc(100% - 40px);
+
+//      }
+
+//      .element:nth-child(2) {
+//          right: 10px;
+//          top: 40px;
+//          height: calc(100% - 80px);
+//      }
+//  }
