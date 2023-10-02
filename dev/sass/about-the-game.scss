@@ -1,11 +1,9 @@
 .about-game {
     height: 1040px;
     background: radial-gradient(#00000000 -150%, #080A0B), url(/assets/img/bg-image-about.png);
-    background-color: #0F0F0F;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 
     &::after {
         content: "";
@@ -19,13 +17,8 @@
     }
 
     .container {
-        height: 100%;
         z-index: 1;
         display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .about-text,
@@ -37,21 +30,10 @@
 
 
     .about-text {
-        color: $text-color;
-        font-family: BebasNeue;
         margin-top: 256px;
         z-index: 2;
 
-        h3 {
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
         h1 {
-            font-size: 80px;
-            font-weight: 700;
-            letter-spacing: 3px;
             margin-bottom: 72px;
             position: relative;
 
@@ -70,14 +52,6 @@
             max-width: 365px;
             position: absolute;
             right: 45px;
-
-            p {
-                text-align: justify;
-                font-family: OpenSans;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 122.222%;
-            }
         }
     }
 
@@ -128,14 +102,15 @@
             background: none;
             display: flex;
             justify-content: center;
-            
-        &:hover {
-            .sld-arrow,
-            .sld-arrow::before,
-            .sld-arrow::after{
-                background-color: $primary-color;
+
+            &:hover {
+
+                .sld-arrow,
+                .sld-arrow::before,
+                .sld-arrow::after {
+                    background-color: $primary-color;
+                }
             }
-        }
         }
 
         .slide {
@@ -198,7 +173,7 @@
 
             &:nth-child(2) {
                 background-color: #fff;
-                transition-delay:0.65s;
+                transition-delay: 0.65s;
             }
         }
     }
@@ -238,7 +213,7 @@
 
             &:nth-child(3) {
                 background-color: #fff;
-                transition-delay:0.65s;
+                transition-delay: 0.65s;
             }
         }
     }
