@@ -24,9 +24,6 @@ section {
 
 }
 
-// section{
-//     margin-bottom: 190px;
-// }
 
 body {
     background-color: $bg-primary;
@@ -69,7 +66,8 @@ body {
 }
 
 .some-text,
-.accordion-body{
+.accordion-body,
+.requirements-table{
     color: $text-color;
     text-align: justify;
     font-family: OpenSans;

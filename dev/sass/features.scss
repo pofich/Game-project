@@ -55,7 +55,7 @@
         position: relative;
 
         &::after {
-            background-image: none;
+            display: none;
         }
 
         &::before {
@@ -106,8 +106,9 @@
 
     .accordion-item {
         &:last-child {
-            .accordion-collapse {
+            .show {
                 &::before {
+                    transition: 1s;
                     height: calc(100% + 24px);
                 }
             }
