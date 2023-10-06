@@ -67,7 +67,9 @@ body {
 
 .some-text,
 .accordion-body,
-.requirements-table{
+.requirements-table,
+.comment,
+.date{
     color: $text-color;
     text-align: justify;
     font-family: OpenSans;
@@ -83,6 +85,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-top: -14px;
 }
 
 h3 {
