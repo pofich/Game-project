@@ -21,7 +21,7 @@
         }
     }
 
-    .accordion{
+    .accordion {
         margin-left: 45px;
     }
 
@@ -80,9 +80,8 @@
 
     }
 
-    .accordion-body {
+    .accordion-collapse {
         position: relative;
-        transition: 1s;
 
         &::before {
             content: '';
@@ -93,15 +92,21 @@
             top: -25px;
             left: -40px;
             width: 4px;
-            height: calc(100% + 68px);
+            height: 0;
             background-color: #fff;
             border-radius: 1px;
         }
     }
 
+    .show {
+        &::before {
+            height: calc(100% + 68px);
+        }
+    }
+
     .accordion-item {
         &:last-child {
-            .accordion-body {
+            .accordion-collapse {
                 &::before {
                     height: calc(100% + 24px);
                 }
