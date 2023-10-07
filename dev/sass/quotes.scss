@@ -11,8 +11,6 @@
         align-items: center;
     }
 
-
-
     .quotes-box,
     .text-box {
         width: 50%;
@@ -26,6 +24,19 @@
         p {
             max-width: 435px;
             text-align: initial;
+        }
+
+        .some-text{
+            margin-bottom: 50px;
+        }
+
+        .btn-text {
+            color: $text-color-secondary;
+            text-align: center;
+            font-family: OpenSans;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
         }
     }
 
@@ -41,17 +52,17 @@
             padding: 15px;
             position: relative;
 
-            &::after{
+            &::after {
                 content: '';
                 position: absolute;
-                background: url(/assets/img/twitter.png) center/contain no-repeat ;
+                background: url(/assets/img/twitter.png) center/contain no-repeat;
                 width: 18px;
                 height: 18px;
                 top: 15px;
                 right: 15px;
             }
 
-            &:nth-child(odd){
+            &:nth-child(odd) {
                 margin-left: 145px;
             }
 
@@ -101,5 +112,4 @@
             }
         }
     }
-
 }
