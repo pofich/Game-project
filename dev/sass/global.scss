@@ -69,7 +69,9 @@ body {
 .accordion-body,
 .requirements-table,
 .comment,
-.date{
+.date,
+input,
+label{
     color: $text-color;
     text-align: justify;
     font-family: OpenSans;
