@@ -29,6 +29,43 @@ body {
     background-color: $bg-primary;
 }
 
+.navbar {
+    background-color: transparent;
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 641px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .block-icons {
+        display: flex;
+        padding: 0;
+        padding-left: 17px;
+        border-left: 2px solid $text-color;
+        height: 30px;
+    }
+
+    .icon {
+        margin: 0 7px;
+    }
+
+    .dropdown-item,
+    .nav-link {
+        color: $text-color;
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+}
+
+
+
 .btn {
     max-width: 260px;
     height: 60px;
@@ -71,7 +108,7 @@ body {
 .comment,
 .date,
 input,
-label{
+label {
     color: $text-color;
     text-align: justify;
     font-family: OpenSans;
