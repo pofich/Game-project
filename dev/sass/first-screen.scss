@@ -1,10 +1,6 @@
 .first-screen {
     height: 100vh;
     background-image: linear-gradient(to bottom, #FFB54800, #342C1DCD 90%, #08090A), url(/assets/img/main-screen.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
 
     .dropdown {
         margin: 0 23px;
@@ -12,6 +8,10 @@
 
     .dropdown-item {
         padding-left: 10px;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     .dropdown-menu {
@@ -24,21 +24,115 @@
         background: rgba(0, 0, 0, 0.75);
     }
 
+    .navbar-collapse {
+        padding: 20px;
+    }
+
+    .show:not(.dropdown-menu) {
+        border-radius: 4px;
+        background: linear-gradient(180deg, #FFB548 24.27%, #f3af34e3 132.4% );
+        z-index: 1;
+
+        .nav-link {
+            &:hover {
+                color: rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+
+    .navbar-toggler {
+        padding: 4px;
+        border: none;
+
+        &-icon {
+            background: none;
+            box-shadow: none;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &-icon {
+            width: 27.5px;
+            height: 2.5px;
+            background-color: white;
+            position: relative;
+            transition: 0.3s;
+
+            &::after,
+            &::before {
+                content: "";
+                width: 27.5px;
+                height: 2.5px;
+                background-color: white;
+                position: absolute;
+                top: 9px;
+                right: 0;
+                transition: 0.3s;
+            }
+
+            &::after {
+                width: 18px;
+            }
+
+            &::before {
+                top: -9px;
+            }
+        }
+
+        &:hover {
+            .navbar-toggler-icon {
+                background-color: $primary-color;
+
+                &::after,
+                &::before {
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+
+        &[aria-expanded="false"] {
+            .navbar-toggler-icon {
+                background: none;
+
+                &::after {
+                    transform: translate(0px, -9px) rotate(45deg);
+                    width: 27.5px;
+                }
+
+                &::before {
+                    transform: translate(0px, 9px) rotate(-45deg);
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    h1 {
+        white-space: nowrap;
+        margin-top: -14px;
+    }
+
     .first-screen-box {
-        height: calc(100% - 150px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .first-screen-title {
-        font-size: 80px;
-        letter-spacing: 3px;
-    }
+
 
     .first-screen-subtitle {
-        font-size: 24px;
         letter-spacing: 2px;
         margin-bottom: 28px;
     }
@@ -75,12 +169,6 @@
         .btn-price {
             border-left: 2px solid rgba(0, 0, 0, 0.75);
             padding-left: 11px;
-        }
-    }
-
-    .dropdown-item {
-        &:hover {
-            color: $primary-color;
         }
     }
 

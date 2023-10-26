@@ -1,5 +1,5 @@
 .requirements {
-    height: 1040px;
+    min-height: 1040px;
     background: radial-gradient(circle closest-side at 70% 52%, #00000000 47%, #080A0B 187%), url(/assets/img/bg-image-requirements.png);
     background-position: center;
     background-size: cover;
@@ -19,12 +19,19 @@
         margin-bottom: 134px;
     }
 
+    .table-box {
+        position: relative;
+        height: 403px;
+        width: 573px;
+        background: url(/assets/img/border-table.svg) center/contain no-repeat;
+    }
+
     .requirements-table {
         position: absolute;
-        top: 1px;
+        top: 2px;
         left: 1px;
-        height: 403px;
-        width: 574px;
+        min-height: 403px;
+        max-width: 574px;
         border: none;
 
         td {
@@ -47,7 +54,4 @@
         }
     }
 
-    .table-box {
-        position: relative;
-    }
 }

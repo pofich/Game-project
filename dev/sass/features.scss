@@ -1,5 +1,5 @@
 .features {
-    height: 1040px;
+    min-height: 1040px; 
     background: radial-gradient(circle closest-side at 29% 49%, #00000000 47%, #080A0B 187%), url(/assets/img/bg-image-features.png);
     background-position: center;
     background-size: cover;
@@ -12,9 +12,7 @@
     }
 
     .features-box {
-        width: 50%;
-        padding-top: 200px;
-        padding-left: 55px;
+        margin: 200px 25px 0;
 
         h1 {
             margin-bottom: 70px;
@@ -23,6 +21,7 @@
 
     .accordion {
         margin-left: 45px;
+        max-width: 370px;
     }
 
     .accordion-body,
@@ -49,6 +48,7 @@
         font-weight: 700;
         letter-spacing: 2px;
         margin-top: 28px;
+        white-space: nowrap;
     }
 
     .accordion-button {

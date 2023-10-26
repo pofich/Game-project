@@ -1,3 +1,252 @@
 @media screen and (max-width: 767px) {
+    section {
+        h1 {
+            font-size: 33px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .btn {
+            min-width: 220px;
+            height: 44px;
+        }
+
+        .some-text,
+        .accordion-body,
+        .requirements-table,
+        .comment,
+        .date,
+        input,
+        label {
+            font-size: 14px;
+        }
+    }
+
+
+
+
+
+    .first-screen {
+
+        .btn-text,
+        .btn-price {
+            font-size: 14px;
+        }
+    }
+
+
+
+
+
+    .about-game {
+        min-height: 765px;
+
+        .about-slider {
+            height: 480px;
+        }
+
+        .slider-dots {
+            margin: 0 -32px;
+            bottom: 40px;
+            right: 125px;
+
+            .sld-dot {
+                margin: 0 32px;
+            }
+        }
+
+        [title="by-default"] {
+            .slide {
+                &:nth-child(3) {
+                    right: 60px;
+                    width: 285px;
+                    height: 440px;
+                }
+
+                &:nth-child(2) {
+                    right: 40px;
+                    width: 250px;
+                    height: 390px;
+                }
+
+                &:nth-child(1) {
+                    right: 20px;
+                    width: 200px;
+                    height: 340px;
+                }
+            }
+        }
+
+        .slide-2 {
+            .slide {
+                &:nth-child(3) {
+                    transform: translate(-100vw, -50%);
+                }
+
+                &:nth-child(2) {
+                    right: 60px;
+                    width: 285px;
+                    height: 440px;
+                }
+
+                &:nth-child(1) {
+                    right: 40px;
+                    width: 250px;
+                    height: 390px;
+                }
+            }
+
+            .sld-dot {
+                &:first-child {
+                    &::after {
+                        width: 91px;
+                    }
+                }
+            }
+        }
+
+        .slide-3 {
+            .slide {
+                transition: 1s;
+
+                &:nth-child(3) {
+                    transform: translate(-100vw, -50%);
+                }
+
+                &:nth-child(2) {
+                    transform: translate(-100vw, -50%);
+                    width: 285px;
+                    height: 440px;
+                }
+
+                &:nth-child(1) {
+                    right: 60px;
+                    width: 285px;
+                    height: 440px;
+                }
+            }
+
+            .sld-dot {
+                &:first-child {
+                    &::after {
+                        width: 169px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    .features {
+        min-height: 980px;
+        background: radial-gradient(circle closest-side at 47% 22%, rgba(0, 0, 0, 0) 47%, #080A0B 204%), url(/assets/img/bg-image-features.png);
+        background-position: -371px 75px;
+
+        .container {
+            align-items: center;
+        }
+
+        .accordion-button {
+            font-size: 21px;
+
+            &::before {
+                left: -27px;
+            }
+        }
+
+        .accordion {
+            max-width: 300px;
+            margin-left: 30px;
+        }
+
+        .accordion-collapse {
+            &::before {
+                left: -22px;
+            }
+        }
+
+        .show::before {
+            height: calc(100% + 59px);
+        }
+
+        .features-box {
+            margin: 200px 0px 0 50px;
+        }
+    }
+
+
+
+
+
+    .requirements {
+        min-height: 600px;
+
+        .container {
+            padding-top: 20px;
+        }
+
+        .table-box {
+            max-width: 340px;
+            background: none;
+        }
+
+        .requirements-table {
+            td {
+                width: 50%;
+                border: 1px solid #979797;
+                padding: 15px 20px;
+            }
+
+            tr {
+                &:last-child {
+                    td {
+                        border: 1px solid #979797;
+                    }
+                }
+            }
+
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .quotes {
+        .container {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .quotes-box,
+        .text-box {
+            width: 100%;
+        }
+
+    }
+
+    .newsletter {
+        min-height: 500px;
+        background-position: 1px 20px;
+        background-size: 300px 405px;
+
+        .form {
+
+            .btn,
+            form {
+                min-width: 235px;
+            }
+
+        }
+    }
+
+
 
 }

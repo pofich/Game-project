@@ -1,89 +1,43 @@
 .newsletter {
     min-height: 700px;
+    background-image: radial-gradient(circle closest-side at 50% 36%, #00000000 65%, #080A0B 200%), url(/assets/img/newsletter-img.png);
+    background-position: 0px 0px;
+    background-size: 445px 694px;
+    background-repeat: no-repeat;
 
     .container {
         display: flex;
-        margin: 0 -35px;
+        flex-direction: column;
+        align-items: center;
 
-        .content-box,
-        .newsletter-img {
+        .content-box {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 0 35px;
-        }
-        .newsletter-img {
-            background-image: radial-gradient(circle closest-side at 50% 36%, #00000000 65%, #080A0B 200%), url(/assets/img/newsletter-img.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            max-height: 694px;
-            max-width: 445px;
-            min-width: 330px;
-            width: 100%;
+            width: 50%;
+            margin: 20px 0 0 auto;
         }
 
-        h1{
+        h1 {
             margin-bottom: 38px;
         }
-        .some-text{
+
+        .some-text {
             margin-bottom: 54px;
         }
 
         .form {
             display: flex;
             margin: 0 -8px;
+            width: 50%;
+            margin: 0 0 0 auto;
 
-            .btn {
-                margin: 0 8px;
-            }
-
+            .btn,
             form {
-                padding: 6px 21px;
-                border-radius: 5px;
-                background: rgb(47 46 46);
                 margin: 0 8px;
-                display: flex;
-                flex-direction: column;
-
-                label {
-                    font-size: 14px;
-                    opacity: 0.5;
-                    text-align: initial;
-                    background: rgb(47 46 46);
-                    margin-bottom: 3px;
-                }
-
-                input {
-                    text-align: initial;
-                    background-color: rgb(47 46 46);
-                    box-shadow: none;
-                    border: none;
-                    color: $primary-color;
-
-                    :focus {
-                        display: none;
-                    }
-
-                    &::placeholder {
-                        color: $primary-color;
-                    }
-                }
-
+                min-width: 275px;
+                max-width: 366px;
             }
-
-            input:-webkit-autofill {
-                -webkit-box-shadow: 0 0 5px 0 rgba(34, 29, 29),
-                    inset 0 0 0 50px rgb(47 46 46);
-                -webkit-text-fill-color: $primary-color;
-            }
-
-            input:-webkit-autofill:focus {
-                -webkit-box-shadow: 0 0 5px 0 rgba(34, 29, 29),
-                    inset 0 0 0 50px rgb(47 46 46);
-                -webkit-text-fill-color: $color-secondary;
-            }
-
 
         }
     }

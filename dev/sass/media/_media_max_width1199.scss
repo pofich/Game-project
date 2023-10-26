@@ -1,2 +1,34 @@
 @media screen and (max-width: 1199px) {
+    .about-game {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-text,
+        .about-slider {
+            width: 100%;
+        }
+
+        .about-text {
+            h1 {
+                &::after {
+                    width: 100%;
+                    bottom: -30px;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        .container {
+            .form {
+                flex-direction: column;
+
+                form {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }

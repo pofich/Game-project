@@ -1,0 +1,72 @@
+@media screen and (max-width: 991px) {
+    .first-screen {
+        .dropdown {
+            position: absolute;
+            top: 30px;
+            right: 45px;
+            padding-right: 17px;
+            border-right: 2px solid $text-color;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar {
+            position: relative;
+
+            .block-icons {
+                display: none;
+            }
+        }
+    }
+
+
+
+
+    .newsletter {
+        background-position: -80px 0px;
+        background-size: 445px 694px;
+    }
+
+
+
+    
+
+    footer{
+        .navbar-brand,
+        .block-icons{
+            margin: 0 auto;
+        }
+
+        .privacy-policy {
+            flex-direction: column;
+            align-items: center;
+            position: static;
+            padding: 30px 0px 25px;
+
+            .some-links {
+                position: static; 
+                display: flex;  
+                flex-direction: column; 
+                
+                a {
+                    padding: 5px 12px;
+                    text-align: center;
+                    &:not(:last-child) {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
